@@ -17,6 +17,8 @@ namespace MvcMovie.Controllers
         // GET: Movies
         public ActionResult Index()
         {
+            var count = db.Movies.ToList().Count.ToString();
+            ViewBag.MovieCount = count;
             return View(db.Movies.ToList());
         }
 

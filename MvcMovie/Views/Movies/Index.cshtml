@@ -9,6 +9,11 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+<p>
+    You currently have: @Html.Label("Index", (string)ViewBag.MovieCount) movies added.
+</p>
+
 <table class="table">
     <tr>
         <th>
